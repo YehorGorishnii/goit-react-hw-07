@@ -1,11 +1,10 @@
 import css from "./Contact.module.css";
-import { useDispatch } from 'react-redux';
-import { deleteContact } from "../../redux/contactsSlice"
+import { useDispatch } from "react-redux";
+import { deleteContact } from "../../redux/contactsOps";
 import { LuPhone, LuSmile } from "react-icons/lu";
 
-export default function Contact({ item: { name, number, id }, onDelete }) {
-
-  const dispatch = useDispatch()
+export default function Contact({ item: { name, number, id } }) {
+  const dispatch = useDispatch();
 
   return (
     <>
